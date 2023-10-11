@@ -493,8 +493,9 @@ body {
   outline: transparent;
   color: #fff;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-subscribe-input::placeholder {
   color: #fff;
@@ -523,8 +524,8 @@ body {
 }
 
 /*---------------------------- Modal window ----------------------------*/
-.modal-wrapper {
-  display: none;
+.backdrop {
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -532,7 +533,7 @@ body {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 }
-.modal-window {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -541,7 +542,24 @@ body {
   width: 408px;
   height: 584px;
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
+}
+.modal-close-btn {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-close {
+  fill: #2e2f42;
 }
 .modal-title {
   text-align: center;
@@ -549,4 +567,30 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.modal-form {
+}
+.modal-field {
+}
+.modal-label {
+}
+.modal-input-wrap {
+}
+.modal-input {
+}
+.modal-text {
+}
+.modal-tel {
+}
+.modal-email {
+}
+.modal-comment {
+}
+.modal-cb-wrap {
+}
+.modal-cb-label {
+}
+.modal-cb {
+}
+.modal-btn {
 }
