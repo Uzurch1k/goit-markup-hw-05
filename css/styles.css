@@ -466,9 +466,13 @@ body {
   fill: #f4f4fd;
 }
 
-.footer-subscribe {
+.footer-subscribe-wrapper {
 }
-.footer-subscribe-label {
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-subscribe-title {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -476,7 +480,7 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.footer-subscribe-wrapper {
+.footer-subscribe-label {
 }
 .footer-subscribe-input {
   width: 264px;
@@ -485,13 +489,17 @@ body {
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 8px 16px;
+  padding-left: 16px;
   outline: transparent;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 .footer-subscribe-input::placeholder {
   color: #fff;
   font-size: 12px;
-  line-height: 2; /* 200% */
+  line-height: 2;
   letter-spacing: 0.04em;
 }
 .footer-subscribe-btn {
@@ -503,16 +511,14 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 8px 64px 8px 24px;
-  position: relative;
-  /* width: 165px;
-  height: 40px; */
+  width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-subscribe-send {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
+  margin-left: 16px;
   fill: #ffffff;
 }
 
