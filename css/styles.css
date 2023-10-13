@@ -672,7 +672,7 @@ body {
 .modal-cb-label {
   color: #8e8f99;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
@@ -691,11 +691,19 @@ body {
   align-items: center;
   fill: transparent;
 }
+.modal-cb:checked + .modal-cb-label .modal-cb-check {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 .modal-cb-svg {
   width: 10px;
   height: 8px;
 }
 .modal-cb-link {
+  color: #4d5ae5;
+  line-height: 1.33;
+  text-decoration-line: underline;
 }
 .modal-btn {
 }
